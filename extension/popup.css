@@ -1,0 +1,215 @@
+body {
+
+width: 380px;
+
+margin: 0;
+
+padding: 15px;
+
+background: #0f1117;
+
+color: white;
+
+font-family: Arial, sans-serif;
+
+}
+
+.container {
+
+display: flex;
+
+flex-direction: column;
+
+gap: 12px;
+
+}
+
+.header {
+
+text-align: center;
+
+padding: 15px;
+
+background: rgba(0,255,153,0.08);
+
+border: 1px solid rgba(0,255,153,0.3);
+
+border-radius: 12px;
+
+}
+
+.header h1 {
+
+margin: 0;
+
+color: #00ff99;
+
+font-size: 24px;
+
+}
+
+.header p {
+
+margin-top: 8px;
+
+color: #cccccc;
+
+font-size: 13px;
+
+}
+
+.card {
+
+background: #161b22;
+
+border-radius: 12px;
+
+padding: 15px;
+
+border: 1px solid rgba(255,255,255,0.08);
+
+}
+
+.card h3 {
+
+margin-top: 0;
+
+margin-bottom: 12px;
+
+color: #00ff99;
+
+}
+
+#current-url {
+
+word-break: break-word;
+
+color: #ffffff;
+
+font-size: 13px;
+
+}
+
+.risk-bar {
+
+width: 100%;
+
+height: 18px;
+
+background: rgba(255,255,255,0.1);
+
+border-radius: 30px;
+
+overflow: hidden;
+
+}
+
+.risk-fill {
+
+width: 0%;
+
+height: 100%;
+
+background: #00ff99;
+
+transition: 0.4s;
+
+}
+
+#risk-score {
+
+text-align: center;
+
+margin-top: 10px;
+
+font-weight: bold;
+
+}
+
+button {
+
+width: 100%;
+
+padding: 12px;
+
+border: none;
+
+border-radius: 10px;
+
+cursor: pointer;
+
+font-size: 14px;
+
+font-weight: bold;
+
+transition: 0.3s;
+
+}
+
+button:hover {
+
+transform: translateY(-2px);
+
+}
+
+#scanBtn {
+
+background: #00ff99;
+
+color: black;
+
+}
+
+#blockBtn {
+
+background: #ff4444;
+
+color: white;
+
+}
+
+.safe {
+
+color: #00ff99;
+
+font-weight: bold;
+
+}
+
+.danger {
+
+color: #ff4444;
+
+font-weight: bold;
+
+}
+
+#threat-analysis p {
+
+margin: 8px 0;
+
+font-size: 13px;
+
+}
+
+#domain-info p {
+
+margin: 6px 0;
+
+font-size: 13px;
+
+}
+
+::-webkit-scrollbar {
+
+width: 6px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+background: #00ff99;
+
+border-radius: 10px;
+
+}

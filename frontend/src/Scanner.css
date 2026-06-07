@@ -1,0 +1,171 @@
+.threat-analysis {
+
+margin-top: 20px;
+
+padding: 15px;
+
+border-radius: 12px;
+
+background: rgba(255,255,255,0.05);
+
+}
+
+.threat-analysis h3 {
+
+color: #00ff99;
+
+margin-bottom: 12px;
+
+}
+
+.threat-item {
+
+color: #ff6666;
+
+margin: 8px 0;
+
+}
+
+.safe-msg {
+
+color: #00ff99;
+
+}
+
+.scanner-container {
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+text-align: center;
+
+width: 100%;
+
+padding: 20px 0;
+
+margin-bottom: 15px;
+
+}
+
+.header {
+
+margin-bottom: 15px;
+
+}
+
+.search-box {
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+gap: 10px;
+
+margin: 15px auto;
+
+flex-wrap: wrap;
+
+}
+
+.search-box input {
+
+width: 500px;
+
+max-width: 90%;
+
+padding: 14px 16px;
+
+font-size: 16px;
+
+border-radius: 10px;
+
+border: 2px solid #00ff99;
+
+background: rgba(0,0,0,0.6);
+
+color: white;
+
+outline: none;
+
+}
+
+.search-box input:focus {
+
+box-shadow: 0 0 15px rgba(0,255,153,0.5);
+
+}
+
+.search-box button {
+
+padding: 14px 24px;
+
+font-size: 16px;
+
+border-radius: 10px;
+
+cursor: pointer;
+
+border: none;
+
+background: #00ff99;
+
+color: black;
+
+font-weight: bold;
+
+transition: 0.3s;
+
+}
+
+.search-box button:hover {
+
+transform: translateY(-2px);
+
+}
+
+.result-card {
+
+width: 90%;
+
+max-width: 850px;
+
+margin: 20px auto;
+
+padding: 25px;
+
+background: rgba(0,0,0,0.55);
+
+border: 1px solid #00ff99;
+
+border-radius: 15px;
+
+backdrop-filter: blur(10px);
+
+}
+
+.domain-card {
+
+margin-top: 20px;
+
+padding: 20px;
+
+border-radius: 12px;
+
+background: rgba(255,255,255,0.05);
+
+text-align: left;
+
+}
+
+.domain-card h3 {
+
+color: #00ff99;
+
+margin-bottom: 15px;
+
+}

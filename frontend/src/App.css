@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+
+  background-image: url("./assets/cyber-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: white;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.72);
+  padding: 20px;
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+/>
+
+<title>Security Warning</title>
+
+<style>
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+  background: #0f1117;
+
+  color: white;
+
+  font-family: Arial, sans-serif;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100vh;
+
+}
+
+.warning-box {
+
+  width: 700px;
+
+  max-width: 90%;
+
+  background: #161b22;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  border: 2px solid #ff4444;
+
+  box-shadow:
+    0 0 30px rgba(255,68,68,0.4);
+
+}
+
+.icon {
+
+  font-size: 70px;
+
+  margin-bottom: 15px;
+
+}
+
+h1 {
+
+  color: #ff4444;
+
+  margin-bottom: 20px;
+
+}
+
+.subtitle {
+
+  font-size: 20px;
+
+  color: #ffffff;
+
+  margin-bottom: 25px;
+
+}
+
+.message {
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  color: #cccccc;
+
+}
+
+.reasons {
+
+  margin-top: 25px;
+
+  text-align: left;
+
+  background: rgba(255,255,255,0.05);
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+}
+
+.reasons h3 {
+
+  color: #00ff99;
+
+}
+
+.reasons ul {
+
+  padding-left: 20px;
+
+}
+
+.reasons li {
+
+  margin: 10px 0;
+
+}
+
+.button-group {
+
+  margin-top: 30px;
+
+}
+
+.btn {
+
+  padding: 12px 24px;
+
+  margin: 10px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+}
+
+.back-btn {
+
+  background: #00ff99;
+
+  color: black;
+
+}
+
+.close-btn {
+
+  background: #ff4444;
+
+  color: white;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="warning-box">
+
+  <div class="icon">
+
+```
+⚠
+```
+
+  </div>
+
+  <h1>
+
+```
+SECURITY WARNING
+```
+
+  </h1>
+
+  <div class="subtitle">
+
+```
+Potential Phishing Website Detected
+```
+
+  </div>
+
+  <div class="message">
+
+```
+This website has been identified
+as potentially malicious by the
+Phishing Shield Detection Engine.
+
+<br><br>
+
+Continuing may expose you to:
+
+<br>
+
+• Credential Theft
+
+<br>
+
+• Financial Fraud
+
+<br>
+
+• Malware Infection
+```
+
+  </div>
+
+  <div class="reasons">
+
+```
+<h3>
+
+  Common Risk Indicators
+
+</h3>
+
+<ul>
+
+  <li>
+    Insecure HTTP protocol
+  </li>
+
+  <li>
+    Suspicious keywords
+  </li>
+
+  <li>
+    High-risk domain extension
+  </li>
+
+  <li>
+    Domain impersonation attempt
+  </li>
+
+</ul>
+```
+
+  </div>
+
+  <div class="button-group">
+
+```
+<button
+  class="btn back-btn"
+  onclick="history.back()"
+>
+
+  Go Back
+
+</button>
+
+<button
+  class="btn close-btn"
+  onclick="window.close()"
+>
+
+  Close Tab
+
+</button>
+```
+
+  </div>
+
+</div>
+
+</body>
+
+</html>

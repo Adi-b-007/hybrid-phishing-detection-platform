@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+/>
+
+<title>Phishing Shield</title>
+
+<link
+  rel="stylesheet"
+  href="popup.css"
+/>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="header">
+
+```
+<h1>🛡 Phishing Shield</h1>
+
+<p>
+  Real-Time Website Protection
+</p>
+```
+
+  </div>
+
+  <div class="card">
+
+```
+<h3>Current Website</h3>
+
+<p id="current-url">
+  Loading...
+</p>
+```
+
+  </div>
+
+  <div class="card">
+
+```
+<h3>Security Status</h3>
+
+<div id="result">
+
+  Waiting for Scan...
+
+</div>
+```
+
+  </div>
+
+  <div class="card">
+
+```
+<h3>Risk Score</h3>
+
+<div class="risk-bar">
+
+  <div
+    id="risk-fill"
+    class="risk-fill"
+  ></div>
+
+</div>
+
+<p id="risk-score">
+  0%
+</p>
+```
+
+  </div>
+
+  <div
+    id="domain-info"
+    class="card"
+  >
+
+```
+<h3>Domain Intelligence</h3>
+
+<p>
+  Waiting for Scan...
+</p>
+```
+
+  </div>
+
+  <div
+    id="threat-analysis"
+    class="card"
+  >
+
+```
+<h3>Threat Analysis</h3>
+
+<p>
+  No analysis available
+</p>
+```
+
+  </div>
+
+  <button id="scanBtn">
+
+```
+SCAN WEBSITE
+```
+
+  </button>
+
+  <button id="blockBtn">
+
+```
+BLOCK DOMAIN
+```
+
+  </button>
+
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+
+</html>
