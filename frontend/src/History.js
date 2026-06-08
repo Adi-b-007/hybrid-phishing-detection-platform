@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
-
+import "./history.css"
 function History() {
 
   const [history, setHistory] = useState([]);
@@ -56,20 +56,102 @@ function History() {
 
   const downloadPDF = () => {
 
-    const doc = new jsPDF();
+  const doc = new jsPDF();
 
-    autoTable(doc, {
-      head: [["URL", "Prediction", "Confidence"]],
-      body: history.map((item) => [
-        item.url,
-        item.prediction,
-        item.confidence
-      ])
-    });
+  doc.setFontSize(18);
 
-    doc.save("Phishing_Report.pdf");
-  };
+  doc.text(
+    "Phishing Detection Platform Report",
+    14,
+    20
+  );
 
+  doc.setFontSize(11);
+
+  doc.text(
+    `Generated: ${new Date().toLocaleString()}`,
+    14,
+    28
+  );
+
+  autoTable(doc, {
+
+    startY: 35,
+
+    head: [[
+      "URL",
+      "Prediction",
+      "Confidence",
+      "Timestamp"
+    ]],
+
+    body: history.map((item) => [
+
+      item.url,
+
+      item.prediction,
+
+      `${item.confidence}%`,
+
+      item.timestamp
+
+    ]),
+
+    styles: {
+
+      fontSize: 8,
+
+      cellPadding: 3,
+
+      overflow: "linebreak",
+
+      valign: "middle"
+
+    },
+
+    headStyles: {
+
+      fillColor: [0, 170, 85],
+
+      textColor: 255,
+
+      fontStyle: "bold"
+
+    },
+
+    alternateRowStyles: {
+
+      fillColor: [245, 245, 245]
+
+    },
+
+    columnStyles: {
+
+      0: {
+        cellWidth: 75
+      },
+
+      1: {
+        cellWidth: 25
+      },
+
+      2: {
+        cellWidth: 25
+      },
+
+      3: {
+        cellWidth: 55
+      }
+
+    }
+
+  });
+
+  doc.save(
+    "Phishing_Report.pdf"
+  );
+
+};
   const filteredHistory = history.filter((item) => {
 
     const matchesSearch =
@@ -137,7 +219,7 @@ function History() {
 
             <tr key={index}>
 
-              <td>{item.url}</td>
+              <td className="url-column">{item.url}</td>
 
               <td>
                 <span
@@ -153,7 +235,7 @@ function History() {
 
               <td>{item.confidence}%</td>
 
-              <td>{item.timestamp}</td>
+              <td className="time-column">{item.timestamp}</td>
 
               <td>
 
