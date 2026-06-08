@@ -17,6 +17,9 @@
 
 table {
   width: 100%;
+
+  table-layout: fixed;
+
   border-collapse: collapse;
 }
 
@@ -28,7 +31,16 @@ th {
 th,
 td {
   padding: 14px;
+
   border: 1px solid #16323f;
+
+  vertical-align: middle;
+
+  overflow-wrap: break-word;
+
+  word-break: break-word;
+
+  white-space: normal;
 }
 
 tr:hover {
@@ -85,4 +97,24 @@ tr:hover {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+.url-column {
+  max-width: 350px;
+
+  word-break: break-word;
+
+  overflow-wrap: break-word;
+
+  white-space: normal;
+
+  text-align: left;
+}
+.time-column {
+  max-width: 220px;
+
+  word-break: break-word;
+
+  overflow-wrap: break-word;
+
+  white-space: normal;
 }
